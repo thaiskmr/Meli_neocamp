@@ -8,7 +8,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         int operacao = 0;
-
         while (operacao < 1 || operacao > 4) {
             System.out.println("Escolha uma operação: \n 1 - Adição \n 2 - Subtração \n 3 - Multiplicação \n 4 - Divisão");
             operacao = scanner.nextInt();
