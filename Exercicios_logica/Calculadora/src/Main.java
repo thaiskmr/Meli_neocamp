@@ -7,14 +7,15 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int operacao;
-        do {
-            System.out.println("Escolha um operação:\n 1 - Adição \n 2 - Subtração \n 3 - Multiplicação \n 4 - Divisão");
+        int operacao = 0;
+
+        while (operacao < 1 || operacao > 4) {
+            System.out.println("Escolha uma operação: \n 1 - Adição \n 2 - Subtração \n 3 - Multiplicação \n 4 - Divisão");
             operacao = scanner.nextInt();
             if (operacao < 1 || operacao > 4) {
-                System.out.println("Operação inválida. Numero deve estar entre 1 e 4");
+                System.out.println("Operação inválida. Número deve estar entre 1 e 4.");
             }
-        } while(operacao < 1 || operacao > 4);
+        }
 
         System.out.println("Digite o primeiro número: ");
         double num1 = scanner.nextDouble();
